@@ -34,7 +34,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Channel ID or Username without @",
-            "required": "False"
+            "required": false
         }
     },
     "stack": "heroku-20",
