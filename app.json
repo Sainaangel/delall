@@ -22,7 +22,7 @@
         },
         "OWNERID": {
             "description": "Owner id of bot,Get it from @MissRose_bot",
-            "required": "True"
+            "required": false
         },
         "USERBOTID": {
             "description": "Your account's telegram id,Get it from @MissRose_bot",
