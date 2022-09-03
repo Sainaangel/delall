@@ -1,67 +1,52 @@
 {
-  "name": "Pyrogram Delete All Bot",
-  "description": "Telegram bot to delete messages from telegram channel.",
-  "logo": "https://telegra.ph/file/7ec22c82f580a334dd13e.jpg",
-  "keywords": [
-    "telegram",
-    "bot",
-    "python",
-    "pyrogram"
-  ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
-  "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-  "repository": "https://github.com/CrazeBots/deleteAllbot",
-  "env": {
-    "API_ID": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
-      "value": ""
+    "name": "Pyrogram Delete All Bot",
+    "description": "Telegram bot to delete messages from telegram channel.",
+    "keywords": [
+        "Deletebot",
+        "pyrogram",
+        "python"
+    ],
+    "repository": "https://github.com/CrazeBots/deleteallbot",
+    "env": {
+        "API_ID": {
+            "description": "Six digit api id, get it from my.telegram.org",
+            "required": "True"
+        },
+        "API_HASH": {
+            "description": "Api Hash, Get it from my.telegram.org",
+            "required": "True"
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token get it from @Botfather",
+            "required": "True"
+        },
+        "OWNERID": {
+            "description": "Owner id of bot,Get it from @MissRose_bot",
+            "required": "True"
+        },
+        "USERBOTID": {
+            "description": "Your account's telegram id,Get it from @MissRose_bot",
+            "required": "True"
+        },
+        "SESSION_STRING": {
+            "description": "pyrogram session string",
+            "required": "True"
+        },
+        "LOG_CHANNEL": {
+            "description": "Channel ID or Username without @",
+            "required": "False"
+        }
     },
-    "API_HASH": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "OWNERID": {
-      "description": "Your Telegram id by contacting @MissRose_bot",
-      "required": false,
-      "value": ""
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
     }
-    "UserBotID": {
-      "description": "Your User Account Telegram id by contacting @MissRose_bot",
-      "required": true,
-      "value": ""
-    }
-    "SESSION_STRING": {
-      "description": "pyrogram session string",
-      "required": true,
-      "value": ""
-    }
-    "LOG_CHANNEL": {
-      "description": "Log channel for bot, must start with -100**********",
-      "required": true,
-      "value": ""
-    }
-    
-  }
 }
