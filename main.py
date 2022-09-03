@@ -22,11 +22,14 @@ def clear():
         
 clear()
 
+
+UserBotID=[1]
 #start command for bot
 @bot.on_message(filters.command(['start','help','delall']))
 def start_bot_cmd(bot,msg):
 	bot.send_message(msg.chat.id,'**Hello i am Alive**\n\nFor delete all Msgs..\n\n**Use: **`/clearchat` **OR** `/clearall`\n\n**Note:** make sure you added me in your chat with ALL permissions.\nOTHERWISE bot will **NOT** work properly\n\nMade by 🖤 with help of \n**YT: [TechnologyRk](https://youtube.com/c/technologyrk)**')
-	
+	ID=userbot.get_me().id
+	UserBotID[0]=ID
 
 	
 #delete message command, this works only in channel not working for group/supergroups	
@@ -34,6 +37,10 @@ def start_bot_cmd(bot,msg):
 def delall_bot_cmd(bot,msg):
  msg.reply_text('__Trying to delete MSGs__. \nthis might be take **some time** as depend on Total Msgs in chat..')
  chat_ID=msg.chat.id
+ if len(str(UserBotID[0]))<4:
+ 	msg.delete()
+ 	msg.reply_text('__Please start me first in private and than use this commad.__')
+ 	return
  
  #------------Creating_Chat_Link-----#
  
@@ -57,7 +64,7 @@ def delall_bot_cmd(bot,msg):
  	
  #--------Promoting Userbot--------#
  try:
- 	bot.promote_chat_member(chat_id=chat_ID,user_id=UserBotID,privileges=ChatPrivileges(can_change_info=True,can_delete_messages=True,can_edit_messages=True,can_post_messages=True,can_promote_members=True,can_invite_users=True,can_manage_video_chats=True,is_anonymous=False))
+ 	bot.promote_chat_member(chat_id=chat_ID,user_id=UserBotID[0],privileges=ChatPrivileges(can_change_info=True,can_delete_messages=True,can_edit_messages=True,can_post_messages=True,can_promote_members=True,can_invite_users=True,can_manage_video_chats=True,is_anonymous=False))
  	
  except ChatAdminRequired:
  	text='__Please Allow All Permissions OR then try again !!!__'
