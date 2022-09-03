@@ -2,7 +2,7 @@
 
 > A star ⭐ from you means a lot to us!
 
-<p align="center"><a href="https://www.github.com/CrazeBots/deleteallbot"><img src="https://telegra.ph/file/7ec22c82f580a334dd13e.jpg" width="600" height="600"></a></p>
+<p align="center"><a href="https://www.github.com/CrazeBots/deleteallbot"><img src="https://telegra.ph/file/7ec22c82f580a334dd13e.jpg" width="300" height="300"></a></p>
 
 Telegram bot to Clear OR delete channel messages speedly.
 
