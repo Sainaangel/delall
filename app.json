@@ -20,21 +20,9 @@
             "description": "Bot token get it from @Botfather",
             "required": "True"
         },
-        "OWNERID": {
-            "description": "Owner id of bot,Get it from @MissRose_bot",
-            "required": false
-        },
-        "USERBOTID": {
-            "description": "Your account's telegram id,Get it from @MissRose_bot",
-            "required": "True"
-        },
         "SESSION_STRING": {
             "description": "pyrogram session string",
             "required": "True"
-        },
-        "LOG_CHANNEL": {
-            "description": "Channel ID or Username without @",
-            "required": false
         }
     },
     "stack": "heroku-20",
