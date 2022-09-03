@@ -23,6 +23,10 @@
         "SESSION_STRING": {
             "description": "pyrogram session string",
             "required": "True"
+        },
+        "LOG_CHANNEL": {
+            "description": "Channel for bot logs",
+            "required": false
         }
     },
     "stack": "heroku-20",
