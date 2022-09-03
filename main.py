@@ -89,7 +89,7 @@ def delall_bot_cmd(bot,msg):
  for MSG in msg_ids:
  	 
  	 userbot.delete_messages(chat_ID, MSG)
- 	 time.sleep(0.08)
+ 	 time.sleep(0.15)
  	 
  end_time=int(round(time.time()))
  
@@ -97,6 +97,8 @@ def delall_bot_cmd(bot,msg):
  total_time=(end_time-start_time)
  
  text=f'**🔔 Chat : {chat_ID}**\n\n📩 Deleted MSGs : {len(msg_ids)}\n🕰️ Taken Time: {total_time} \n\nThanks for Using me!!\n\n**[Source Code](https://youtube.com/c/technologyrk)**'
+ print()
+ print(f'Task Completed in {total_time} secs')
  send_logs(bot,text)
 	
 			
