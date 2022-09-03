@@ -2,10 +2,10 @@
 
 import os
 
-
-OWNERID=1
-UserBotID=12345
-LOG_CHANNEL=939339
+try:
+	LOG_CHANNEL=int(os.environ.get('LOG_CHANNEL',12))
+except:
+	LOG_CHANNEL=1234
 
 SESSION_STRING=os.environ.get('SESSION_STRING','')
 
