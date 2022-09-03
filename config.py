@@ -1,16 +1,16 @@
 #-----Config File for Bot-----
 
-from os import environ
+import os
 
 
-OWNERID=int(environ.get('OWNERID'))
-UserBotID=int(environ.get('UserBotID'))
-LOG_CHANNEL=environ.get('LOG_CHANNEL')
+OWNERID=os.environ.get('OWNERID','')
+UserBotID=os.environ.get('UserBotID','')
+LOG_CHANNEL=os.environ.get('LOG_CHANNEL','')
 
-SESSION_STRING=environ.get('SESSION_STRING')
+SESSION_STRING=os.environ.get('SESSION_STRING','')
 
 
-API_ID=int(environ.get('API_ID'))
-API_HASH=environ.get('API_HASH')
+API_ID=os.environ.get('API_ID','')
+API_HASH=os.environ.get('API_HASH','')
 
-BOT_TOKEN=environ.get('BOT_TOKEN')
+BOT_TOKEN=os.environ.get('BOT_TOKEN','')
