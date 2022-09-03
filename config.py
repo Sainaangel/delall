@@ -3,9 +3,9 @@
 import os
 
 
-OWNERID=os.environ.get('OWNERID','')
-UserBotID=os.environ.get('UserBotID','')
-LOG_CHANNEL=os.environ.get('LOG_CHANNEL','')
+OWNERID=1
+UserBotID=12345
+LOG_CHANNEL=939339
 
 SESSION_STRING=os.environ.get('SESSION_STRING','')
 
