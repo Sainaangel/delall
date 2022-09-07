@@ -30,7 +30,7 @@ Telegram bot to Clear OR delete channel messages speedly.
 
 4. Enter the directory
    ```markdown
-   cd ChannelBot
+   cd deleteallbot
    ```
 5. Run the file
    ```markdown
