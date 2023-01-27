@@ -3,14 +3,14 @@
 import os
 
 try:
-	LOG_CHANNEL=int(os.environ.get('LOG_CHANNEL',12))
+	LOG_CHANNEL=int(os.environ.get('LOG_CHANNEL','-1001647004968'))
 except:
 	LOG_CHANNEL=1234
 
-SESSION_STRING=os.environ.get('SESSION_STRING','')
+SESSION_STRING=os.environ.get('SESSION_STRING','1BJWap1sBuxkuXziJIZUP6MXYVySGmH9ITL-dCq5hnLHqqJsCI0WW9qGEHtktfQ58B2fvVHCLxi9nBEVc2C2PdQ2B65ZDoDWiYlTRV3cp9E7bqQgxmsRpGP6X3NoULqY4XbkaUDfWiZjU43zA2VbAnyOS1Sdl_7ycLmyXvVYlyeIHex28_S26rw9HDQOphzaqZXaJhQjtcidKS69K16P4mm-JBWLnAUbz9RuBsn7nFkwT_chv9v1vlhRHEMW_LkOqj9lsvI57-NbVStYWTYtsOiQsi4b5iLedUH3cBzX5lSFFEHMk8NX6_t3eNAoFEbxbLcPN_K7BCjXHpXHGIiuVoij-wrKgnCE=')
 
 
-API_ID=os.environ.get('API_ID','')
-API_HASH=os.environ.get('API_HASH','')
+API_ID=os.environ.get('API_ID','6296490')
+API_HASH=os.environ.get('API_HASH','24385183c93a98ae4155c25d9f5f64b2')
 
-BOT_TOKEN=os.environ.get('BOT_TOKEN','')
+BOT_TOKEN=os.environ.get('BOT_TOKEN','5897701792:AAHakzVZ6yRN7wxuufCwylhGuvfiUtTz_GM')
